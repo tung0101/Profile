@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e3edf7;
+}
+form{
+  width: 350px;
+  height: 440px;
+  border: 1px solid white;
+}
+.profile-card {
+  width: 350px;
+  height: 440px;
+  text-align: center;
+  border-radius: 20%;
+}
+
+.card-header {
+  box-shadow: #000000 6px 6px 10px -1px, white 0px 0px 6px  6px;
+  background: #e3edf7;
+  padding: 60px 40px;
+}
+
+.pic {
+  display: inline-block;
+  padding: 8px;
+  background: linear-gradient(130deg, #74b9ff, #e66767);
+  margin: auto;
+  border-radius: 50%;
+  background-size: 200% 200%;
+  animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient {
+  25% {
+    background-position: left bottom;
+  }
+
+  50% {
+    background-position: right bottom;
+  }
+
+  75% {
+    background-position: right top;
+  }
+
+  100% {
+    background-position: left top;
+  }
+}
+
+.pic img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name {
+  color: #000000;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.desc {
+  font-size: 18px;
+  color: #E8A87C;
+}
+
+.sm {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.sm a {
+  color: #000000;
+  width: 56px;
+  font-size: 30px;
+  margin: 0px 15px;
+  transition: .3s linear;
+}
+
+.sm a:hover {
+  color: #E8A87C;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 12px 50px;
+  color: #E8A87C;
+  border: 2px solid #E8A87C;
+  border-radius: 6px;
+  margin-top: 16px;
+  transition: .3s linear;
+}
+
+.contact-btn:hover {
+  background: #E8A87C;
+  color: #000000;
+}
+
+.card-footer {
+  background: #f4f4f4;
+  padding: 60px 10px;
+}
+
+.numbers {
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  flex: 1;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #E8A87C;
+}
+
+.item span {
+  display: block;
+  color: #e3edf7;
+  font-size: 30px;
+}
+
+.border {
+  width: 1px;
+  height: 30px;
+  background: #bbb;
+}
